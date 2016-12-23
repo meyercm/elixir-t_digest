@@ -1,8 +1,8 @@
 defmodule TDigest.Mixfile do
   use Mix.Project
 
-  @version "0.1.0"
-  @repo_url "https://github.com/meyercm/sig_auth"
+  @version "0.1.1"
+  @repo_url "https://github.com/meyercm/elixir-t_digest"
 
   def project do
     [app: :t_digest,

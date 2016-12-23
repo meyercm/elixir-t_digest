@@ -78,7 +78,7 @@ higher performance backend.
 ```elixir
 def deps do
   [
-    {:t_digest, "~> 0.1.0"},
+    {:t_digest, "~> 0.1"},
   ]
 end
 ```
