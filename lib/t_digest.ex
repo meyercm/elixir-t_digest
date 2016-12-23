@@ -10,7 +10,7 @@ defmodule TDigest do
   - composable (multiple t-digests can be joined into one)
 
   For more details, see the original paper:
-  
+
   https://github.com/tdunning/t-digest/blob/master/docs/t-digest-paper/histo.pdf
 
   ## Use:
@@ -75,7 +75,7 @@ defmodule TDigest do
 
   """
   import ShorterMaps
-  @default_delta
+  @default_delta 0.1
   defstruct [
     clusters: [],
     count: 0,
