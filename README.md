@@ -69,26 +69,16 @@ My requirements for this datastructure don't specify performance, so the
 current implementation is backed by a list of 2-tuples, rather than the
 balanced tree suggested by Dunning.  The list implies most operations will be
 O(n) for n clusters.  For a high-throughput use case, you may wish to choose
-another datastructure, or submit a pull request updating this library with a
+another data structure, or submit a pull request updating this library with a
 higher performance backend.
 
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add `t_digest` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:t_digest, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `t_digest` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:t_digest]]
-    end
-    ```
+```elixir
+def deps do
+  [
+    {:t_digest, "~> 0.1.0"},
+  ]
+end
+```

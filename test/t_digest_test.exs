@@ -2,10 +2,7 @@ defmodule TDigestTest do
   use ExUnit.Case
 
   test "new/1 gives a new digest datastructure" do
-    assert %TDigest{} = TDigest.new(100)
-  end
-  test "new/0 defaults to 100" do
-    assert %TDigest{delta: 100} = TDigest.new
+    assert %TDigest{} = TDigest.new()
   end
   test "new/1 assigns delta" do
     assert %TDigest{delta: 1000} = TDigest.new(1000)
@@ -89,7 +86,7 @@ defmodule TDigestTest do
                |> TDigest.update(0)
                |> TDigest.update(10)
                |> TDigest.percentile(0.5)
-      assert result = 5
+      assert result == 5
     end
   end
 
